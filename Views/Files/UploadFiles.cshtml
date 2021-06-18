@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "File Upload";
+}
+
+<h2>File Upload</h2>
+
+@using(Html.BeginForm("UploadFiles", "Files", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<div class="row">
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" id="customFile" />
+        <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+</div>
+<br/>
+<div class="row">
+    <input class="btn btn-primary" type="submit" value="Upload" />
+</div>     
+}
+
+
+
