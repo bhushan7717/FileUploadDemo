@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace FileUploadDemo.Controllers
 {
-    public class FilesController : Controller
+    public class FilesController : BaseController
     {
         // GET: Files
         [HttpGet]
